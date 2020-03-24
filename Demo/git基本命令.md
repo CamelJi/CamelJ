@@ -119,6 +119,112 @@
 
     重做上一次commit，并包括指定文件的新变化
 
+- **分支**
+
+  - `git branch`
+
+    列出所有本地分支
+
+  - `git branch -r`
+
+    列出所有远程分支
+
+  - `git branch -a`
+
+    列出所有本地和远程分支
+
+  - `git branch [branch-name]`
+
+    新建一个分支，但依然停留在当前分支
+
+  - `git checkout -b [branch]`
+
+    `git checkout -b appoint_box(别名) origin/feature/20200324_appoint_box_1(分支名)`
+
+    新建一个分支，并切换到该分支
+
+  - `git branch [branch] [commit]`
+
+    新建一个分支，指向指定commit
+
+  - `git branch --track [branch] [remote-branch]`
+
+    新建一个分支，与指定的远程分支建立追踪关系
+
+  - `git checkout [branch-name]`
+
+    切换到指定分支，并更新工作区
+
+  - `git checkout -`
+
+    切换到上一个分支
+
+  - `git branch --set-upstream [branch] [remote-branch]`
+
+    建立追踪关系，在现有分支与指定的远程分支之间
+
+  - `git merge [branch]`
+
+    合并指定分支到当前分支
+
+  - `git cherry-pick [commit]`
+
+    选择一个commit ,合并进当前分支
+
+  - `git branch -d [branch-name]`
+
+    删除分支
+
+  - `git push origin --delete [branch-name]`
+
+    `git branch -dr [remote/branch]`
+
+    删除远程分支
+
+- 标签
+
+  - `git tag`
+
+    列出所有tag
+
+  - `git tag [tag]`
+
+    新建一个tag在之前commit
+
+  - `git tag [tag] [commit]`
+
+    新建一个tag在指定commit
+
+  - `git tag -d [tag]`
+
+    删除本地tag
+
+  - `git push origin :refs/tags/[tagName]`
+
+    删除远程tag
+
+  - `git show [tag]`
+
+    查看tag信息
+
+  - `git push [remote] [tag]`
+
+    提交指定tag
+
+  - `git push [remote] --tags`
+
+    提交所有tag
+
+  - `git checkout -b [branch] [tag]`
+
+    新建一个分支，指向每个tag
+
+- 
+
+- 
+
+- 
+
 - 
 
 - 
